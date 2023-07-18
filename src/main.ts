@@ -65,11 +65,11 @@ scene.background = spaceTexture;
 
 // Avatar
 
-// const danielTexture = new THREE.TextureLoader().load('daniel.png');
+const danielTexture = new THREE.TextureLoader().load('src/daniel.png');
 
-// const daniel = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: danielTexture }));
+const daniel = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: danielTexture }));
 
-// scene.add(daniel);
+scene.add(daniel);
 
 // Moon
 
@@ -89,8 +89,8 @@ scene.add(moon);
 moon.position.z = 30;
 moon.position.setX(-10);
 
-// daniel.position.z = -5;
-// daniel.position.x = 2;
+daniel.position.z = -5;
+daniel.position.x = 2;
 
 // Scroll Animation
 
